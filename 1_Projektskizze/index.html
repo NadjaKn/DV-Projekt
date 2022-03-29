@@ -8,8 +8,8 @@
 <body>
 	<header>
 		<img src="images/HFU-Logo.png">
-		<h1>Projekt: XXX</h1>
-		<h2>Semester: WS/SS 20XX</h2>
+		<h1>Projekt: Autospiel</h1>
+		<h2>Semester: SS 2022</h2>
 		<b>Teammitglieder:</b>
 		<ul>
 			<li>Student 1 (student.1@hs-furtwangen.de)</li>
@@ -20,20 +20,53 @@
 	<main>
 		<h2>1. Projekt-Beschreibung</h2>
 		<p>TODO: Beschreibung des Projekts</p>
+			<li> der Anwender steuert ein Auto und man weicht mit Hilfe der Tastatur Gegenstaenden oder anderen Fahrzeugen aus </li>
 		<h2>2. Features und Anforderungen</h2>
 		<p>TODO: Stellen Sie die aus Ihrer Sicht wichtigsten funktionalen Anforderungen (maximal 10) zusammen:</p>
 		<ul>
 			<li>Was soll Ihre Anwendung leisten?</li>
+				Steuerung eines Autos nach links und rechts zwischen 3 festgelegten Positionen (=Spuren)
+				Auftauchen anderer Autos, die langsamer fahren und ueberholt werden muessen
+				3 Leben
+				nach 3 Kollisionen mit Objekten(Auto/Bande), also Verlust von allen 3 Leben bricht das Spiel ab bzw. startet neu
+				Schwierigkeitsgrad(generelle Geschwindigkeit erhoeht sich/mehr Verkehr) erhoeht sich je weiter man kommt
+				geeignete Benutzeroberflaeche und einfache Darstellung
+				
+			
 			<li>Welche Dienste werden angeboten?</li>
+				Entertainment
+				?
+			
 			<li>Welche Eingangsdaten sind erforderlich? Zu welchen Ausgaben werden diese verarbeitet?</li>
+				Tastendruck -> Autosteuerung
+				Kollision mit Objekt -> Verlust eines Lebens
+				Verlust von 3 Leben -> Spielabbruch/-neustart
+				?
+				
 			<li>Wie soll sich das System in bestimmten Situationen verhalten?</li>
+				bei Tastendruck nach rechts, Auto bewegt sich um eine Spur nach rechts (von insgesamt möglichen 3 Spuren/Positionen)
+				bei Tastendruck nach links, Auto bewegt sich um eine Spur nach links (von insgesamt möglichen 3 Spuren/Positionen)
+				je nach Level(=bereits zurueckgelegte Strecke) erhoeht sich Schwierigkeitsgrad(wird schneller/mehr Autos)
+				nach 3 Kollisionen mit Objekt(Auto), also Verlust von allen 3 Leben bricht das Spiel ab bzw. startet neu
+				
+			
 			<li>Welche Daten sind dauerhaft zu speichern?</li>
+				Highscore(=zuruckgelegte Strecke) und Name des dazugehoerigen Spielers
+				
+			
 		</ul>
 		<p>TODO: Darüber hinaus sollen nicht-funktionale Anforderungen spezifiziert werden:</p>
 		<ul>
 			<li>Wie soll die Bedieneroberfläche aussehen?</li>
+				third person Perspektive das man Objekte aber noch rechtzeitig sieht
+				siehe Skizze
+			
 			<li>In welcher Systemumgebung soll Ihr Programm lauffähig sein?</li>
+				?
+			
 			<li>Mit welchen Entwicklungswerkzeugen wird gearbeitet?</li>
+				?
+			
 		</ul>
 		<h2>3. Architektur</h2>
 		<p>TODO: Beschreibung der Software-Architektur inkl. Klassendiagramm z. B.:</p>
